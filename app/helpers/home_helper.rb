@@ -6,3 +6,4 @@ module HomeHelper
     redirect Instagram.authorize_url(:redirect_uri => CALLBACK_URL)
   end
 end
+end
