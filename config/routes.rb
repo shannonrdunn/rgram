@@ -1,9 +1,12 @@
 Insta::Application.routes.draw do
-  get "home/index"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  resources :users
+  resources :sessions
 
+  match 'auth/:provider/callback' => 'sessions#create'
+  match 'auth/failure' => 'sessions#failure'
+  match 'logout' => 'sessions#destroy'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -50,7 +53,7 @@ Insta::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+  root :to => 'users#index'
 
   # See how all your routes lay out with "rake routes"
 
