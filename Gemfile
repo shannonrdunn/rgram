@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'therubyracer'
-gem 'instagram'
+gem 'instagram',  :git => 'git://github.com/Instagram/instagram-ruby-gem.git'
 gem 'sinatra'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
