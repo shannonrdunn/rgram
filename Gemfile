@@ -2,13 +2,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'therubyracer'
+gem 'omniauth', :git => 'git://github.com/intridea/omniauth.git'
 gem 'instagram',  :git => 'git://github.com/Instagram/instagram-ruby-gem.git'
 gem 'sinatra'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'omniauth', :git => 'git://github.com/intridea/omniauth.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
